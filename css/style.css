@@ -1,0 +1,44 @@
+.head{
+	border: 1px solid;
+	width: 69%;
+	margin-left: 14%;
+	margin-top: 5%;
+	padding: 3%;
+}
+
+.body{
+	border: 1px solid;
+	width: 75%;
+	margin-left: 14%;
+}
+
+.left{
+	margin-left: 10px;
+}
+
+.right{
+	float: right;
+	margin-right: 10px;
+}
+
+.right i{
+	cursor: pointer;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+td{
+	padding-left: 10px;
+	vertical-align: top;
+}
+
+td img {
+	width: 240px;
+	height: 135px;
+	border: 1px solid;
+}
+
+.text{
+	overflow-y: auto;
+    height: 120px;
+}

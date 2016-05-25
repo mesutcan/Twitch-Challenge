@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Twitch Streams</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="head">
+			<input type="text" name="query" id="query" placeholder="Search Query..." >
+			<input type="button" value="Search" id="search">
+		</div>
+		<div class="body">
+			<br>
+			<span id="result_count" class="left">Total Results: 0</span>
+			<span class="right"><i id="left_arrow" class="fa fa-arrow-left" aria-hidden="true"></i><span id="pagination">0/0</span><i id="right_arrow" class="fa fa-arrow-right" aria-hidden="true"></i></span>
+			<br><br>
+			<table id="result_table">
+			</table>
+		</div>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
