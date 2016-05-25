@@ -1,4 +1,4 @@
-(function(){
+(function() {
   document.getElementById("left_arrow").addEventListener("click", prev);
   document.getElementById("right_arrow").addEventListener("click", next);
   search_btn = document.getElementById("search");
@@ -13,7 +13,7 @@
   api_version = 3
 })();
 
-function submit(){
+function submit() { 
   search_btn.disabled = true;
   var query_string = query.value.trim();
   if(query_string != ''){
@@ -31,16 +31,16 @@ function submit(){
   }
 }
 
-function next(){
+function next() {
   last_page = Math.floor(total/limit);
-  if(page != last_page){
+  if(page != last_page) {
     page++;
     submit();
    }
 }
 
 function prev(){
-	if(page != 0){
+	if(page != 0) {
 		page--;
 		submit();
 	}
@@ -50,7 +50,7 @@ function twitch_callback(data){
   total = data._total;
   result_count.innerHTML = 'Total Results: ' + total
 
-  if(total > 0){
+  if(total > 0) {
     last_page = Math.floor(total/limit);
 	pagination.innerHTML = page+1 + '/' + last_page;
 	result_table.innerHTML = build_html(data.streams);
@@ -59,7 +59,7 @@ function twitch_callback(data){
 	  pagination.innerHTML = '0/0';
 }
 
-function build_html(streams){
+function build_html(streams) {
 	html = '';
 	for (i = 0; i < 5; i++) {
 		html += '<tr>\
