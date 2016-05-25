@@ -69,7 +69,7 @@ function build_html(streams) {
 					<td>\
 						<h2>'+ streams[i].channel.display_name +'</h2>\
 						<hr>\
-						'+ streams[i].game +' - '+ streams[i].viewers +'\
+						'+ streams[i].game +' - '+ streams[i].viewers + ' viewers' + '\
 						<hr>\
 						<div class="text">\
 							Stream description text text text texttext text text texttext text text texttext text text texttext text text texttext text text texttext text text texttext text text texttext text text texttext text text texttext text text texttext text text texttext text text texttext text text texttext text text texttexttext text text texttext text text texttext text text texttext text text texttext text text texttext text text texttext text text texttext text text....\
